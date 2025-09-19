@@ -52,3 +52,5 @@ python3 main.py
 - `google-generativeai`
 - `python-dotenv`
 
+## 📄 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software with proper attribution. See the LICENSE file for full details.
