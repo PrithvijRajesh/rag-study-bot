@@ -1,5 +1,5 @@
 
-# PDF Query Bot with Gemini AI
+# RAG Study Bot with Gemini AI
 
 This project allows you to upload a PDF, extract its text, embed the content using Sentence Transformers, store it in ChromaDB, and interactively query the document using Google's Gemini AI.
 
