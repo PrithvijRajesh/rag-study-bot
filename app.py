@@ -69,12 +69,12 @@ def ask_question():
     
     #Generate answer with Gemini LLM
     if context.strip():
-        prompt = f"Answer the following question using the context given.\n\nContext:\n{context}\n\nQuestion:\n{query}"
+        prompt = f"Answer the following question using the context given. Try to be as detailed as possible and make it easy to understand the concept being asked in the question\n\nContext:\n{context}\n\nQuestion:\n{query}"
         response = model.generate_content(prompt)
         return jsonify({'answer':response.text})
     else:
         return jsonify({'answer':"No context available to answer question."})
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     app.run(host = "0.0.0.0", port = port)
